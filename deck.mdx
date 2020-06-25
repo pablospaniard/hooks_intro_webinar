@@ -1,13 +1,24 @@
 import './script.js'
-import { Notes, Image } from 'mdx-deck'
+import { Notes, Image, themes } from 'mdx-deck'
+import { CodeSurfer } from 'code-surfer'
+import { vsDark } from '@code-surfer/themes'
 
-import { CodeBlock, List } from './components'
+import { CodeBlock, List, Layout } from './components'
 
 import hooks_order from '!!raw-loader!./snippets/hooks_order.js'
 import basic_hooks from '!!raw-loader!./snippets/basic_hooks.js'
 import add_hooks from '!!raw-loader!./snippets/add_hooks.js'
 
-export { default as theme } from './theme'
+export const theme = {
+    ...themes.notes,
+    colors: {
+        text: '#d6deeb',
+        background: '#334452',
+        link: '#addb67',
+    },
+}
+
+<Layout>
 
 # What Hooks are :question:
 
@@ -23,7 +34,11 @@ export { default as theme } from './theme'
 
 </Notes>
 
+</Layout>
+
 ---
+
+<Layout>
 
 ## Before we continue, note that Hooks:
 
@@ -44,7 +59,11 @@ export { default as theme } from './theme'
 
 </Notes>
 
+</Layout>
+
 ---
+
+<Layout>
 
 ## Motivation :muscle:
 
@@ -70,7 +89,11 @@ export { default as theme } from './theme'
 
 </Notes>
 
+</Layout>
+
 ---
+
+<Layout>
 
 ## Rules of Hooks :point_up:
 
@@ -105,17 +128,25 @@ Hooks are JavaScript functions, but they impose two additional rules:
 
 </Notes>
 
+</Layout>
+
 ---
+
+<Layout>
 
 ## How does React know which state corresponds to which useState call?
 
-<CodeBlock style={{ fontSize: 28, width: '80vw' }} code={hooks_order} />
+<CodeBlock code={hooks_order} />
 
 <Notes>
     The answer is that React relies on the order in which Hooks are called.
 </Notes>
 
+</Layout>
+
 ---
+
+<Layout>
 
 ## Basic Hooks
 
@@ -123,11 +154,21 @@ Hooks are JavaScript functions, but they impose two additional rules:
 -   useEffect
 -   useContext
 
----
-
-<CodeBlock style={{ fontSize: 28, width: '80vw' }} code={basic_hooks} />
+</Layout>
 
 ---
+
+<Layout>
+
+### Basic Hooks
+
+<CodeBlock code={basic_hooks} />
+
+</Layout>
+
+---
+
+<Layout>
 
 ## Additional Hooks
 
@@ -139,7 +180,11 @@ Hooks are JavaScript functions, but they impose two additional rules:
 -   useLayoutEffect
 -   useDebugValue
 
+</Layout>
+
 ---
+
+<Layout>
 
 ## Additional Hooks
 
@@ -151,11 +196,21 @@ Hooks are JavaScript functions, but they impose two additional rules:
 -   ~~useLayoutEffect~~
 -   ~~useDebugValue~~
 
----
-
-<CodeBlock style={{ fontSize: 28, width: '80vw' }} code={add_hooks} />
+</Layout>
 
 ---
+
+<Layout>
+
+### Additional Hooks
+
+<CodeBlock code={add_hooks} />
+
+</Layout>
+
+---
+
+<Layout>
 
 ## Custom Hooks
 
@@ -163,11 +218,19 @@ A custom Hook is a JavaScript function whose name starts with ”use” and that
 
 A lot of great and useful examples => [Use Hooks](https://usehooks.com/)
 
+</Layout>
+
 ---
+
+<Layout>
 
 # Demo
 
+</Layout>
+
 ---
+
+<Layout>
 
 # The End :checkered_flag:
 
@@ -176,3 +239,5 @@ A lot of great and useful examples => [Use Hooks](https://usehooks.com/)
 ###### _twitter_: [twitter.com/pablo_spaniard](https://twitter.com/pablo_spaniard)
 
 ###### _linkedin_: [linkedin.com/pablospaniard/](https://www.linkedin.com/in/pablospaniard/)
+
+</Layout>

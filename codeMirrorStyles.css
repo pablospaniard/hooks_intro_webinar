@@ -2,11 +2,6 @@
     position: relative;
 }
 
-.react-codemirror2 {
-    margin-top: 18px;
-    margin-bottom: 18px;
-}
-
 .react-codemirror2:first-child {
     margin-top: 0;
 }
@@ -16,10 +11,9 @@
 }
 
 
-.CodeMirror.cm-s-night-owl {
+.CodeMirror.cm-s-material {
     height: 70vh;
-    margin-bottom: 18px;
-    padding: 14px;
+    border-radius: 16px;
 }
 
 .CodeMirror pre {

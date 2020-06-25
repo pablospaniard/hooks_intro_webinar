@@ -1,23 +1,27 @@
-//useState
+// ------------
+// useState
+// ------------
 const [state, setState] = useState(initialState)
 
-//----------
+//
 
-//useEffect
+// ------------
+// useEffect
+// ------------
 useEffect(doSomethingHere)
 
-//ComponentDidMount
+// ComponentDidMount
 useEffect(() => {
     //do what need to be done here
 }, [])
 
-//ShoudlComponentUpdate
+// ShoudlComponentUpdate
 const { value } = props
 useEffect(() => {
     //do what need to be done here
 }, [value])
 
-//WillComponentUnmount
+// WillComponentUnmount
 useEffect(() => {
     effect
     return () => {
@@ -25,8 +29,10 @@ useEffect(() => {
     }
 }, [])
 
-//----------
+//
 
-//useContext
+// ------------
+// useContext
+// ------------
 const value = useContext(MyContext)
 //it is equal to static contextType = MyContext in Class component

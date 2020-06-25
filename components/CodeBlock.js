@@ -2,19 +2,26 @@ import React from 'react'
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 
 import 'codemirror/lib/codemirror.css'
-import '../cm-night-owl.css'
-import '../styles.css'
+import 'codemirror/theme/material.css'
+import '../codeMirrorStyles.css'
 
 const CodeBlock = ({ code, options = {}, style, ...props }) => (
-    <div style={{ fontSize: 18, overflow: 'scroll', ...style }}>
+    <div
+        style={{
+            fontSize: 28,
+            overflow: 'scroll',
+            textAlign: 'left',
+            ...style,
+        }}
+    >
         <CodeMirror
             value={code}
             options={{
                 mode: 'jsx',
-                theme: 'night-owl',
-                lineNumbers: false,
-                readOnly: 'nocursor',
-                ...options
+                theme: 'material',
+                lineNumbers: true,
+                readOnly: false,
+                ...options,
             }}
             {...props}
         />

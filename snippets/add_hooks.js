@@ -1,19 +1,27 @@
-//useReducer
+// ------------
+// useReducer
+// ------------
 const [state, dispatch] = useReducer(reducer, initialArg, init)
 
-//----------
+//
 
-//useCallback
+// ------------
+// useCallback
+// ------------
 const memoizedCallback = useCallback(() => {
     doSomething(a, b)
 }, [a, b])
 
-//----------
+//
 
-//useMemo
+// ------------
+// useMemo
+// ------------
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b])
 
-//----------
+//
 
-//useRef
+// ------------
+// useRef
+// ------------
 const ref = useRef(initialValue)

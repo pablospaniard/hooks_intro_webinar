@@ -7,7 +7,7 @@
     "license": "MIT",
     "dependencies": {
         "codemirror": "^5.47.0",
-        "mdx-deck": "^2.3.2",
+        "mdx-deck": "4.1.1",
         "react": "^16.8.6",
         "react-codemirror2": "^6.0.0",
         "react-dom": "^16.8.6",

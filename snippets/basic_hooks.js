@@ -12,21 +12,21 @@ useEffect(doSomethingHere)
 
 // ComponentDidMount
 useEffect(() => {
-    //do what need to be done here
+  //do what need to be done here
 }, [])
 
 // ShoudlComponentUpdate
 const { value } = props
 useEffect(() => {
-    //do what need to be done here
+  //do what need to be done here
 }, [value])
 
-// WillComponentUnmount
+// componentWillUnmount
 useEffect(() => {
-    effect
-    return () => {
-        //do what need to be done here
-    }
+  effect
+  return () => {
+    //do what need to be done here
+  }
 }, [])
 
 //
